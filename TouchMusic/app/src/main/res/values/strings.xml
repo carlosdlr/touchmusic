@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Touch Music</string>
+    <string name="app_title">Touch Music</string>
+    <string name="app_wallet">Comprar Credito</string>
+    <string name="app_wallet_help_text">Comprar Creditos Para Bourbon Street</string>
+    <string name="app_wallet_no_data_list">No hay informacion de planes</string>
+    <string name="show_map_string">Mostrar Mapa</string>
+    <string name="location_string">Ingresa Ubicacion</string>
+
+</resources>

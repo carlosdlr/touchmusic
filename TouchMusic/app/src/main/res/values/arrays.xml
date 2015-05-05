@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<array name="entries">
+		<item>@drawable/imagine_dragons</item>
+		<item>@drawable/metallica</item>
+		<item>@drawable/pantera</item>
+		<item>@drawable/maroon_5</item>
+		<item>@drawable/american_authors</item>
+		<item>@drawable/one_republic</item>
+	</array>	
+	<array name="names">
+	    <item>Imagine Dragons</item>
+	    <item>Metallica</item>
+	    <item>Pantera</item>
+	    <item>Marron 5</item>
+	    <item>American Authors</item>
+	    <item>One Republic</item>
+	</array>
+</resources>

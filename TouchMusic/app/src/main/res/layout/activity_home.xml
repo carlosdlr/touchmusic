@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Home"
+    android:background="#FF000000">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFFFF">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:background="#ff000000">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageViewLogoHome"
+                        android:src="@drawable/music" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/app_title"
+                        android:id="@+id/textViewHome"
+                        android:textColor="#FFFFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:pj="http://schemas.android.com/apk/res/com.touchmusic"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="60dp">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:text="text"
+                android:id="@+id/selected_item"
+                android:background="#1E1921"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold|normal"
+                android:gravity="center" />
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:padding="5dip"
+                android:gravity="top"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <com.touchmusic.components.carousel.Carousel
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/carousel"
+                    pj:UseReflection="true"
+                    pj:Items="@array/entries"
+                    pj:Names="@array/names"
+                    pj:SelectedItem="0"
+                    android:animationDuration="200"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Los 6 mas escuchados Bourbon Street"
+                android:id="@+id/textViewTop5"
+                android:textColor="#FFFFFFFF"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonHome"
+                android:src="@drawable/home"
+                android:background="#ff000000"
+                android:onClick="openHomeActivity" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonLocation"
+                android:src="@drawable/location"
+                android:background="#ff000000"
+                android:clickable="true"
+                android:onClick="openLocationActivity" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonWallet"
+                android:src="@drawable/wallet"
+                android:background="#ff000000"
+                android:onClick="openWalletActivity" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonJukebox"
+                android:src="@drawable/jukebox"
+                android:background="#ff000000"
+                android:onClick="openMusicActivity" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageViewHomeMenu"
+                android:src="@drawable/setting"
+                android:layout_weight="1"
+                android:onClick="openProfileActivity" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
