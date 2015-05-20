@@ -8,5 +8,6 @@
     <string name="app_wallet_no_data_list">No hay informacion de planes</string>
     <string name="show_map_string">Mostrar Mapa</string>
     <string name="location_string">Ingresa Ubicacion</string>
+    <string name="title_activity_maps">Touch Music Map</string>
 
 </resources>

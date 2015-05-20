@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.touchmusic.activities.map.MapsActivity;
 import com.touchmusic.components.carousel.Carousel;
 import com.touchmusic.components.carousel.CarouselAdapter;
 import com.touchmusic.components.carousel.CarouselItem;
@@ -81,7 +82,7 @@ public class Home extends Activity {
     }
 
     public void openLocationActivity(View view) {
-        startActivityApp(Location.class);
+        startActivityApp(MapsActivity.class);
     }
 
     public void openHomeActivity(View view) {
