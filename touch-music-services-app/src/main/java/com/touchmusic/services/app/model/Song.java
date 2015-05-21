@@ -3,10 +3,8 @@ package com.touchmusic.services.app.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Song {
+public class Song extends BaseEntity{
 	
-	private final long id;
-	private final String name;
 	private List<Album> albums = new ArrayList<>();
 	private Artist artist = new Artist();
 	
@@ -27,21 +25,9 @@ public class Song {
 		this.albums = albums;
 	}
 
-
-	public long getId() {
-		return id;
-	}
-
-
-	public String getName() {
-		return name;
-	}
-
-
 	public Artist getArtist() {
 		return artist;
 	}
-
 
 	public void setArtist(Artist artist) {
 		this.artist = artist;

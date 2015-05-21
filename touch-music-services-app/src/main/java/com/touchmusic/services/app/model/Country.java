@@ -3,10 +3,8 @@ package com.touchmusic.services.app.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Country {
-	
-	private long id;
-	private String name;
+public class Country extends BaseEntity{
+
 	private List<City> cities = new ArrayList<>();
 	
 	public Country() {}
@@ -22,14 +20,6 @@ public class Country {
 
 	public void setCities(List<City> cities) {
 		this.cities = cities;
-	}
-
-	public long getId() {
-		return id;
-	}
-
-	public String getName() {
-		return name;
 	}
 	
 }

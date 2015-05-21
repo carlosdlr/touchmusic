@@ -3,12 +3,11 @@ package com.touchmusic.services.app.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Album {
+public class Album extends BaseEntity{
 
-	private long id;
-	private String name;
 	private String description;
 	private List<Song> songs = new ArrayList<>();
+	private byte[] image;
 	
 	public Album(){}
 	
@@ -18,12 +17,8 @@ public class Album {
 		this.description = description;
 	}
 
-	public long getId() {
-		return id;
-	}
-
-	public String getName() {
-		return name;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public String getDescription() {
@@ -36,6 +31,14 @@ public class Album {
 
 	public void setSongs(List<Song> songs) {
 		this.songs = songs;
+	}
+
+	public byte[] getImage() {
+		return image;
+	}
+
+	public void setImage(byte[] image) {
+		this.image = image;
 	}
 		
 }

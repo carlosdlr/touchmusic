@@ -1,9 +1,7 @@
 package com.touchmusic.services.app.model;
 
-public class Bar {
+public class Bar extends BaseEntity{
 	
-	private long id;
-	private String name;
 	private String address;
 	private Country country = new Country();
 	private City city = new City();
@@ -29,13 +27,9 @@ public class Bar {
 	public void setCity(City city) {
 		this.city = city;
 	}
-
-	public long getId() {
-		return id;
-	}
-
-	public String getName() {
-		return name;
+	
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public String getAddress() {
